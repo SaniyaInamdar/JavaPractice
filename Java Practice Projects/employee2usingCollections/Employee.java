@@ -27,7 +27,7 @@ public class Employee extends Person{
 	
 	@Override
 	public void accept() {
-		super.accept();
+//		super.accept();
 		Scanner sc=new Scanner(System.in);
 		System.out.println("---------- Enter Employee Details ----------");
 		System.out.println("Enter Id : ");
@@ -42,7 +42,7 @@ public class Employee extends Person{
 	
 	@Override
 	public void show() {
-		super.show();
+//		super.show();
 		System.out.println("---------- Employee Details ----------");
 		System.out.println("Id is : "+getId());
 		System.out.println("Departmnet is : "+getDepartment());
