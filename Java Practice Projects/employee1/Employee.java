@@ -6,12 +6,12 @@ public class Employee extends Person {
 	private String post,department;
 	private int salary;
 	int arr[]=new int[5];
-	
+	private int id;
 	public Employee() {
-		for(int i=0;i<arr.length;i++) {
-			accept();
-			show();
-		}
+//		for(int i=0;i<arr.length;i++) {
+//			accept();
+//			show();
+//		}
 	}
 	
 	@Override
@@ -66,5 +66,11 @@ public class Employee extends Person {
 		this.salary = salary;
 	}
 	
+	public void setId(int id) {
+		this.id=id;
+	}
+	public int getId() {
+		return id;
+	}
 
 }
