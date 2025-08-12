@@ -1,6 +1,7 @@
 package studentArrayList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -72,15 +73,25 @@ public class StudentManagement {
 		}
 	}
 	
+	
+	public void sortbyrolllno() {
+		Collections.sort(list, new SortRollNo());
+	}
+	
+	
 	public static void main(String[] args) {
 		
 		StudentManagement sm=new StudentManagement();
 		sm.addStudent();
 		sm.viewAllStudent();
-		sm.deleteStudent();
+//		sm.deleteStudent();
+//		sm.viewAllStudent();
+//		sm.updateStudent();
+//		sm.viewAllStudent();
+		
+		sm.sortbyrolllno();
 		sm.viewAllStudent();
-		sm.updateStudent();
-		sm.viewAllStudent();
+		
 	}
 	
 	
